@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訂單完成 - The Eggy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="thank-you.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="The Eggy Logo">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="thank-you-main">
+        <div class="thank-you-container">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h1>訂單已成功送出！</h1>
+            <div class="order-info">
+                <p>訂單編號：<span id="orderNumber"></span></p>
+                <p>我們已經收到您的訂單，將盡快為您處理</p>
+            </div>
+            <div class="order-status">
+                <h2>訂單狀態</h2>
+                <div id="statusTimeline" class="status-timeline">
+                    <!-- 狀態時間軸將由 JavaScript 動態添加 -->
+                </div>
+            </div>
+            <div class="button-group">
+                <a href="index.html" class="back-home">返回首頁</a>
+                <a href="#" class="track-order">追蹤訂單</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="thank-you.js"></script>
+</body>
+</html> 

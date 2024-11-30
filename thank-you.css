@@ -1,0 +1,153 @@
+.thank-you-main {
+    margin-top: 80px;
+    padding: 2rem;
+    min-height: calc(100vh - 80px);
+    background: var(--light-gray);
+}
+
+.thank-you-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.success-icon {
+    font-size: 4rem;
+    color: #4CAF50;
+    margin-bottom: 1.5rem;
+    animation: scaleIn 0.5s ease-out;
+}
+
+.thank-you-container h1 {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.order-info {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: var(--light-gray);
+    border-radius: 8px;
+}
+
+.order-info p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+#orderNumber {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.status-timeline {
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.status-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 40px;
+    width: 2px;
+    height: calc(100% - 20px);
+    background: #ddd;
+}
+
+.status-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-content {
+    flex: 1;
+    text-align: left;
+}
+
+.status-title {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.status-time {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.button-group a {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.back-home {
+    background: var(--light-gray);
+    color: var(--text-color);
+}
+
+.track-order {
+    background: var(--primary-color);
+    color: white;
+}
+
+.back-home:hover {
+    background: #eee;
+}
+
+.track-order:hover {
+    background: #ff8c00;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .thank-you-container {
+        padding: 2rem 1rem;
+    }
+    
+    .button-group {
+        flex-direction: column;
+    }
+    
+    .button-group a {
+        width: 100%;
+        text-align: center;
+    }
+} 

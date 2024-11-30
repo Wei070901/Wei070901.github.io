@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Eggy - 美味點心專賣店</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="images/logo.png" alt="The Eggy Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">品牌故事</a></li>
+                <li><a href="#">最新消息</a></li>
+                <li><a href="#">產品介紹</a></li>
+                <li><a href="#">購物須知</a></li>
+                <li><a href="#">烘焙小教室</a></li>
+                <li><a href="#">聯絡我們</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="/">首頁</a> / <a href="/products">產品介紹</a> / 手工餅乾
+        </div>
+
+        <div class="product-section">
+            <div class="sidebar">
+                <h2>產品介紹</h2>
+                <ul class="category-list">
+                    <li><a href="#"><i class="fas fa-cookie"></i> 手工餅乾</a></li>
+                    <li><a href="#"><i class="fas fa-gift"></i> 禮盒・伴手禮</a></li>
+                    <li><a href="#"><i class="fas fa-coffee"></i> 精品咖啡</a></li>
+                    <li><a href="#"><i class="fas fa-th-large"></i> 所有商品</a></li>
+                </ul>
+            </div>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="new-tag">新品上市</div>
+                        <img src="images/product1.jpg" alt="青蔥乳酪牛軋餅">
+                    </div>
+                    <div class="product-info">
+                        <h3>青蔥乳酪牛軋餅</h3>
+                        <p class="description">法國頂級愛樂薇無鹽發酵奶油/日本四葉乳酪粉，香濃可口，入口即化。</p>
+                        <p class="price">$250</p>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            立即購買
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product2.jpg" alt="北海道乳酪脆餅">
+                    </div>
+                    <div class="product-info">
+                        <h3>北海道乳酪脆餅</h3>
+                        <p class="description">精選北海道3.6牛乳製成，口感香脆，濃郁奶香。</p>
+                        <p class="price">$225</p>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            立即購買
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product3.jpg" alt="抹茶杏仁餅">
+                    </div>
+                    <div class="product-info">
+                        <h3>抹茶杏仁餅</h3>
+                        <p class="description">使用日本進口抹茶粉，搭配加州杏仁，清新回甘。</p>
+                        <p class="price">$230</p>
+                        <button class="add-to-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            立即購買
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="cart-panel">
+        <div class="cart-header">
+            <h2>購物車</h2>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- 購物車商品將在這裡動態添加 -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>總計：</span>
+                <span class="total-amount">$0</span>
+            </div>
+            <button class="checkout-btn">前往結帳</button>
+        </div>
+    </div>
+    <div class="cart-overlay"></div>
+
+    <script src="main.js"></script>
+</body>
+</html> 
